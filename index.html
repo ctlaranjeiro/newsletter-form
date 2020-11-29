@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InvoiceXpress Newsletter</title>
+    <!--favicon-->
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+    <!--STYLE-->
+    <link rel="stylesheet" href="style.css"/>
+
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!--Font awesome icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="main-container">
+        <div id="container">
+
+            <div id="newsletter-graphics">
+                <img id="news-img" src="img/newsletter-graphic.jpg" alt="newsletter" />
+                <h3>Não perca as nossas novidades!</h3>
+            </div>
+
+            <div id="form-container">
+                <form id="news-form" action="https://invoicexpress.us7.list-manage.com/subscribe/post" method="POST">
+                    <input type="hidden" name="u" value="9f7b0cd2b943540ed1bfcb08c">
+                    <input type="hidden" name="id" value="c67926a9c4">
+                    
+                    <h1>Subscreva a nossa newsletter</h1>
+
+                    <div class="input-container">
+                        <i class="fa fa-envelope icon"></i>
+                        <input type="email" class="form-input" id="MERGE0" name="MERGE0" placeholder="Email" />
+                    </div>
+                    <!--Email error message-->
+                    <span class="error-message" id="email-err-message">Por favor, insira um email válido.</span>
+                    
+                    <div class="input-container">
+                        <i class="fa fa-user icon"></i>
+                        <input type="text" class="form-input" id="MERGE1" name="MERGE1" placeholder="Nome" />
+                    </div>
+                    <!--Name error message-->
+                    <span class="error-message" id="name-err-message">Por favor, insira o seu nome.</span>
+                    
+                    <div class="input-container">
+                        <i class="fa fa-suitcase icon"></i>
+                        <input type="text" class="form-input" id="MERGE2" name="MERGE2" placeholder="Ocupação" />
+                    </div>
+                    <!--Occupation error message-->
+                    <span class="error-message" id="occupation-err-message">Por favor, insira a sua ocupação.</span>
+                    
+
+                    <input type="submit" id="submit-btn" value="Subscrever" />
+                    <!--Success message-->
+                    <span class="success-message" id="success-message">Enviado com sucesso!</span>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--SCRIPTS-->
+    <script src="formValidation.js"></script>
+</body>
+</html>
