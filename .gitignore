@@ -1,3 +1,7 @@
 # Graphics folder #
 ###################
 graphics
+
+# Files #
+###################
+.DS_Store
